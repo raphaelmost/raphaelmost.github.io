@@ -969,6 +969,12 @@ $('.r_SteinzeitAuswahl').on('click', function(){
     window.location = "#r_SteinzeitEntscheidung";
     $('#r_ZukunftEntscheidung').css({display: "none"});
     setTimeout(function(){ window.location="#Endscreen"}, 8000);
+    $('.endeTitel').delay(8100).fadeIn(2000);
+    $('.endeTitel').fadeOut(2000);
+    $('.endeTitel2').delay(12000).fadeIn(2000);
+    $('.endeTitel2').fadeOut(2000);
+    $('.endeTitel3').delay(15000).fadeIn(2000);
+    $('.endeTitel3').fadeOut(5000); 
 
 
 });
@@ -980,6 +986,12 @@ $('.r_ZukunftAuswahl').on('click', function(){
     window.location = "#r_ZukunftEntscheidung";
     $('#r_SteinzeitEntscheidung').css({display: "none"});
     setTimeout(function(){ window.location="#Endscreen"}, 8000);
+    $('.endeTitel').delay(8100).fadeIn(2000);
+    $('.endeTitel').fadeOut(2000);
+    $('.endeTitel2').delay(12000).fadeIn(2000);
+    $('.endeTitel2').fadeOut(2000);
+    $('.endeTitel3').delay(15000).fadeIn(2000);
+    $('.endeTitel3').fadeOut(5000); 
 
 
 });
@@ -1220,15 +1232,16 @@ ScrollTrigger.create({
 });
 
 
+$('.endeTitel').hide();
+$('.endeTitel2').hide();
+$('.endeTitel3').hide();
 
 
 
 function endtitle(){
 
 //$('.r_blackscreen4').fadeOut("slow");
-$('.endeTitel').hide();
-$('.endeTitel2').hide();
-$('.endeTitel3').hide();
+
 $('.endeTitel').fadeIn(2000);
 $('.endeTitel').fadeOut(2000);
 $('.endeTitel2').delay(3200).fadeIn(2000);
